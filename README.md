@@ -1,0 +1,2 @@
+# WatchBD
+I'd like to introduce this website as a user-and admin-friendly, secure, effective, and responsive websites for buying and selling wrist watches. This project is built on how a buyer may effectively use a category to search for the type of watch they are looking for. Additionally, how admins can add and manage products and customer orders. Cookies are also used to track users' favourite brands.
