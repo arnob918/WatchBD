@@ -1,0 +1,108 @@
+header {
+    color: blue;
+    text-align: center;
+    background-color: red;
+  }
+  header button {
+    color: red;
+  }
+  
+  button, button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .blink_me {
+    -webkit-animation: blinker 1s linear infinite;
+            animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .primary-background-color {
+    background-color: rgb(29, 70, 130);
+  }
+  
+  .secondary-background-color {
+    background-color: rgb(37, 156, 167);
+  }
+  
+  .navbar-text-color {
+    color: rgb(221, 255, 49);
+  }
+  
+  .navbar-bg-gradient {
+    background: linear-gradient(rgb(29, 70, 130), rgb(37, 156, 167));
+  }
+  
+  .f-size-12 {
+    font-size: 12px;
+  }
+  
+  .f-size-14 {
+    font-size: 14px;
+  }
+  
+  .f-size-16 {
+    font-size: 16px;
+  }
+  
+  .f-size-20 {
+    font-size: 20px;
+  }
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #16a1bd;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(221, 255, 49);
+  color: black;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} 
